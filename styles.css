@@ -11,6 +11,14 @@ h1{
     font-size: 6rem;
 }
 
+button{
+    color:white;
+    background-color:#3939;
+    text-align: center;
+    font-size: 1.4rem;  
+    border-radius: 10px;
+}
+
 button:focus {
     outline: 0;
 }
@@ -18,9 +26,14 @@ button:focus {
 body{
     width: 100%;
     background: #56ab2f;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(#c2e59c, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(#c2e59c, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+img {
+    width: 600px;
+    height: 400px;
 }
 
 
@@ -34,7 +47,6 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
 .container {
     max-width: 700px;
     margin: 0 auto;
-    padding: 100px 50px;
     text-align: center;
 }
 
@@ -62,7 +74,7 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
 }
 
 .app {
-    margin: 40px auto;
+    margin: 0 auto;
 }
 
 #note-textarea {
@@ -71,6 +83,8 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
 
 #recording-instructions {
     margin: 15px auto 60px;
+    font-size: 2rem;
+    color:#3c604d
 }
 
 #notes {
@@ -94,20 +108,5 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 50px 25px;
     }
-
-    button {
-        margin-bottom: 10px;
-    }
-
-}   
-
-
-
-/* -- Demo ads -- */
-
-@media (max-width: 1200px) {
-    #bsaHolder{ display:none;}
 }
