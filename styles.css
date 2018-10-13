@@ -7,8 +7,28 @@ p {
     color: #444;
 }
 
+h1{
+    font-size: 6rem;
+}
+
 button:focus {
     outline: 0;
+}
+
+body{
+    width: 100%;
+    background: #56ab2f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.jumbotron{
+     max-width: 100%;
+     margin: 0 auto;
+     padding-top: 50px;
+     text-align: center; 
 }
 
 .container {
@@ -17,6 +37,7 @@ button:focus {
     padding: 100px 50px;
     text-align: center;
 }
+
 
 .container h1 {
     margin-bottom: 20px;
