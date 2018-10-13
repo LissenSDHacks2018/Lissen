@@ -91,6 +91,13 @@ img {
     padding-top: 20px;
 }
 
+.toDoClass {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
 .note .header {
     font-size: 0.9em;
     color: #888;
@@ -110,3 +117,4 @@ img {
 @media (max-width: 768px) {
     }
 }
+

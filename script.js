@@ -112,6 +112,26 @@ $('#save-note-btn').on('click', function(e) {
       
 })
 
+$('#todo-list-btn').on('click', function(e) {
+  recognition.stop();
+
+  if(!noteContent.length) {
+    instructions.text('Could not save empty note. Please add a message to your note.');
+  }
+  else {
+    // Save note to localStorage.
+    // The key is the dateTime with seconds, the value is the content of the note.
+    todo(noteContent);
+
+    // Reset variables and update UI.
+    noteContent = '';
+    renderNotes(getAllNotes());
+    noteTextarea.val('');
+    instructions.text('Note saved successfully.');
+  }
+      
+})
+
 
 notesList.on('click', function(e) {
   e.preventDefault();
@@ -178,6 +198,14 @@ function renderNotes(notes) {
 
 function saveNote(dateTime, content) {
   localStorage.setItem('note-' + dateTime, content);
+}
+
+function todo(notes) {
+  var item = notes;
+  var text = document.createTextNode(item);
+  var newItem = document.createElement("li");
+  newItem.appendChild(text);
+  document.getElementById("todoList").appendChild(newItem);
 }
 
 
