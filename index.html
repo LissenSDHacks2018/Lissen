@@ -29,18 +29,25 @@
                 
                 <button id="pause-record-btn" title="Pause Recording">Pause Recording</button>
                 
-                <button id="save-note-btn" title="Save Note">Save Note</button>   
+                
 
-                <button id="todo-list-btn" title="Save Todo Item">Save Todo Item</button>
                 
                 <br>
                 <br>
-                <h3>Add New Note</h3>
+                <h3>Current Conversation</h3>
                 <div class="input-single">
-                    <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition or Type in a todo item and click Add Todo Item." rows="6"></textarea>
                 </div>
                 
-                <h3>My Notes</h3>
+                <button id="save-note-btn" title="Save Note">Save Dialogue</button>  
+                
+                <button id="todo-list-btn" title="Save Todo Item">Add Todo Item</button>
+                
+                <br>
+                <br>
+                
+                <h3>My Saved Dialogues</h3>
+        
                 <ul id="notes">
                     <li>
                         <p class="no-notes">You don't have any notes.</p>
@@ -50,15 +57,13 @@
             </div>
 
         </div>
+
+    <div class="container">
                 
                <form class="toDoClass" id="todoList">
-                   <input id="todoInput">
-                   <button type="button" onclick="todoList()">Add Item Todo</button>
-                   <ol id="todoList"></ol>
-               </form>
-                
-                
-
+               <h3>My Todo List</h3>
+                   
+    </div>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

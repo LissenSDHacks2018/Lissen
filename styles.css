@@ -15,8 +15,9 @@ button{
     color:white;
     background-color:#3939;
     text-align: center;
-    font-size: 1.4rem;  
+    font-size: 1rem;  
     border-radius: 10px;
+    margin: auto;
 }
 
 button:focus {
@@ -94,7 +95,6 @@ img {
 .toDoClass {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
 }
 
