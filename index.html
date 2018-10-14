@@ -22,7 +22,7 @@
 
             <div class="app"> 
                 
-                 <p id="recording-instructions">Press the <strong>Start Recording</strong> button and allow access.</p>
+                 <p id="recording-instructions">Press the <strong>Start Recording</strong> button and allow access to start a conversation.</p>
                 
                 
                 <button id="start-record-btn" title="Start Recording">Start Recording</button>
@@ -47,9 +47,10 @@
                 <br>
                 
                 <h3>My Saved Dialogues</h3>
-        
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names...">
                 <ul id="notes">
-                    <li>
+                    <li id="stuff"> <a href="#"></a>
                         <p class="no-notes">You don't have any notes.</p>
                     </li>
                 </ul>
@@ -59,15 +60,15 @@
         </div>
 
     <div class="container">
-                
-               <form class="toDoClass" id="todoList">
+               <form class="toDoClass" id="todoList"> 
                <h3>My Todo List</h3>
-                   
+           </form>
     </div>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        <script src="search.js"></script>
 
         <!-- Only used for the demos ads. Please ignore and remove. --> 
         <script src="https://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>

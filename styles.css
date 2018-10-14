@@ -41,7 +41,7 @@ img {
 .jumbotron{
      max-width: 100%;
      margin: 0 auto;
-     padding-top: 50px;
+     padding-top: 0px;
      text-align: center; 
 }
 
@@ -116,5 +116,7 @@ img {
 
 @media (max-width: 768px) {
     }
+
+
 }
 
