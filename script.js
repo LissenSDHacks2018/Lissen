@@ -185,7 +185,7 @@ function renderNotes(notes) {
           <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
           <a href="#" class="delete-note" title="Delete">Delete</a>
         </p>
-        <p class="content">${note.content}</p>
+        <p href="#" class="content">${note.content}</p>
       </li>`;    
     });
   }
